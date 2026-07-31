@@ -1,7 +1,27 @@
 aid: octarine
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octarine.png
 name: Octarine
-description: 'Octarine is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Octarine was a cloud-native application security startup that built a
+  security platform for Kubernetes and service-mesh environments, providing runtime
+  visibility, policy enforcement, and threat detection for containerized workloads
+  and microservices. Backed by Accel and Samsung NEXT, Octarine was acquired by VMware
+  in May 2020 and its technology was folded into VMware Carbon Black Cloud and the
+  Tanzu portfolio to deliver Kubernetes and container security. As an independent
+  company Octarine no longer operates a public developer or API surface; its former
+  domain octarinesec.com no longer resolves. This profile is retained in the API
+  Evangelist network as a portfolio-company / acquisition record rather than an
+  active API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/octarine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +29,21 @@ x-backed-by:
 - accel
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: vmware
+x-acquired-date: '2020-05'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Security
+- Kubernetes
+- Cloud Native
+- Container Security
+- DevSecOps
+- Service Mesh
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +53,10 @@ maintainers:
 common:
 - type: Website
   url: http://www.octarinesec.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
+  note: 'Company acquired by VMware (2020); octarinesec.com defunct (NXDOMAIN); no
+    live API surface to search or probe. Identity/description hygiene applied.'
