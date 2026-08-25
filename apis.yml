@@ -12,16 +12,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/octarine.png
 name: Octarine
-description: 'Octarine was a cloud-native application security startup that built a
-  security platform for Kubernetes and service-mesh environments, providing runtime
-  visibility, policy enforcement, and threat detection for containerized workloads
-  and microservices. Backed by Accel and Samsung NEXT, Octarine was acquired by VMware
-  in May 2020 and its technology was folded into VMware Carbon Black Cloud and the
-  Tanzu portfolio to deliver Kubernetes and container security. As an independent
-  company Octarine no longer operates a public developer or API surface; its former
-  domain octarinesec.com no longer resolves. This profile is retained in the API
-  Evangelist network as a portfolio-company / acquisition record rather than an
-  active API provider.'
+description: Octarine was a cloud-native application security startup that built a security platform for Kubernetes
+  and service-mesh environments, providing runtime visibility, policy enforcement, and threat detection for containerized
+  workloads and microservices. Backed by Accel and Samsung NEXT, Octarine was acquired by VMware in May 2020 and
+  its technology was folded into VMware Carbon Black Cloud and the Tanzu portfolio to deliver Kubernetes and container
+  security. As an independent company Octarine no longer operates a public developer or API surface; its former
+  domain octarinesec.com no longer resolves. This profile is retained in the API Evangelist network as a portfolio-company
+  / acquisition record rather than an active API provider.
 url: https://raw.githubusercontent.com/api-evangelist/octarine/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -31,10 +28,10 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: acquired
 x-acquired-by: vmware
-x-acquired-date: '2020-05'
+x-acquired-date: 2020-05
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-21'
 tags:
 - Company
 - Security
@@ -60,6 +57,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/vmware/
+  name: VMware
+  x-relationship: acquisition
+  x-generated-by: broadcom-family:2026-08-21
+  x-acquired: 2020
 - type: Website
   url: http://www.octarinesec.com
 x-enrichment:
@@ -67,5 +70,8 @@ x-enrichment:
   status: minimal
   artifacts_added: 0
   pass: local-v1
-  note: 'Company acquired by VMware (2020); octarinesec.com defunct (NXDOMAIN); no
-    live API surface to search or probe. Identity/description hygiene applied.'
+  note: Company acquired by VMware (2020); octarinesec.com defunct (NXDOMAIN); no live API surface to search or
+    probe. Identity/description hygiene applied.
+x-parent: vmware
+x-relationship: acquisition
+x-acquired: 2020
